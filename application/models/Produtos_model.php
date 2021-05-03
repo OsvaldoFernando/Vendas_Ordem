@@ -30,4 +30,14 @@ class Produtos_model extends CI_Model
 		//A Clúsula LEFT trará todos os produtos no banco de dado ainda que não tenha uma categoria atribuida.
 
 	}
+
+	public function update($produto_id, $diferenca)
+	{
+
+		$this->db->set('produto_qtde_estoque', 'produto_qtde_estoque - ' .$diferenca, FALSE);
+
+		$this->db->where('produto_id', $produto_id);
+
+		$this->db->update('produtos');
+	}
 }

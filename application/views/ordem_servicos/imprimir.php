@@ -87,7 +87,7 @@ $this->load->view('layout/sidebar');
                     <span class="icon text-white-50">
                       <i class="fas fa-plus"></i>
                     </span>
-							<span class="text">Cadastrar Ordem de serviços</span>
+							<span class="text">Nova Ordem de serviços</span>
 						</a>
 
 					</div>

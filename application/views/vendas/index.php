@@ -92,7 +92,7 @@ $this->load->view('layout/sidebar');
 			<div class="card-header py-3">
 
 				<!-- Botão -->
-				<a title="Cadastrar nova venda" href="<?php echo base_url('venda/add'); ?>" class="btn btn-success btn-sm float-right"><i
+				<a title="Cadastrar nova venda" href="<?php echo base_url('vendas/add'); ?>" class="btn btn-success btn-sm float-right"><i
 							class="fas fa-shopping-cart"></i>&nbsp;Nova</a>
 
 				<!-- Botão -->
@@ -122,7 +122,7 @@ $this->load->view('layout/sidebar');
 
 								<td> <?php echo $venda->venda_id; ?></td>
 								<td> <?php echo formata_data_banco_com_hora($venda->venda_data_emissao); ?></td>
-								<td> <?php echo $venda->cliente_nome; ?></td>
+								<td> <?php echo $venda->cliente_nome_completo; ?></td>
 								<td> <?php echo $venda->forma_pagamento; ?></td>
 								<td> <?php echo 'AKZ&nbsp;'.$venda->venda_valor_total; ?></td>
 

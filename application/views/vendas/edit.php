@@ -28,7 +28,7 @@ $this->load->view('layout/sidebar');
 			<ol class="breadcrumb">
 
 				<!-- **** Permite voltar para página Home -->
-				<li class="breadcrumb-item"><a href="<?php echo base_url('os'); ?>">Ordens de serviços</a></li>
+				<li class="breadcrumb-item"><a href="<?php echo base_url('os'); ?>">Vendas</a></li>
 
 				<!-- **** Título -->
 				<li class="breadcrumb-item active" aria-current="page"><?php echo $titulo; ?></li>
@@ -181,7 +181,7 @@ $this->load->view('layout/sidebar');
 					<input type="hidden" name="venda_id" value="<?php echo $venda->venda_id ?>" />
 
 					<div class="mt-3">
-						<button class="btn btn-primary btn-sm mr-2" id="btn-cadastrar-venda" form="form" <?php echo ($desabilitar == TRUE ? 'disabled' : ''); ?>><?php echo ($desabilitar == TRUE ? 'Encerrada' : 'Salvar'); ?></button>
+						<button class="btn btn-primary btn-sm mr-2" id="btn-cadastrar-venda" form="form" <?php echo ($desabilitar == TRUE ? 'disabled' : '');?>><?php echo ($desabilitar == TRUE ? 'Encerrada' : 'Guardar');?></button>
 						<a href="<?php echo base_url('vendas'); ?>" class="btn btn-secondary btn-sm">Voltar</a>
 					</div>
 
